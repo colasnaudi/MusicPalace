@@ -32,10 +32,18 @@ L'administrateur peut ajouter des cds directement depuis l'interface d'administr
 <div align='center'>
     <h2>Home</h2>
     <img src="img/Home.png" width='400px'>
+    <h2>Home Mobile</h2>
+    <img src="img/HomeMobile.png" width='200px'>
     <h2>Artistes</h2>
     <img src="img/Artistes.png" width='400px'>
+    <h2>Artistes Mobile</h2>
+    <img src="img/ArtistesMobile.png" width='200px'>
     <h2>Styles</h2>
     <img src="img/Styles.png" width='400px'>
+    <h2>Styles Mobile</h2>
+    <img src="img/StylesMobile.png" width='200px'>
     <h2>Parametres</h2>
     <img src="img/Param.png" width='400px'>
+    <h2>Parametres Mobile</h2>
+    <img src="img/ParamMobile.png" width='200px'>
 </div>
