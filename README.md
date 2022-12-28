@@ -16,8 +16,8 @@ L'administrateur peut ajouter des cds directement depuis l'interface d'administr
 
 <span style="color:red">
     <h2>Warning</h2>
-    <p>The site is hosted on a free server, so it may be slow and not work properly.</p>
-    <p>Le site est hébergé sur un serveur gratuit, il peut donc être lent et ne pas fonctionner correctement.</p>
+    <p>Don't put a password you use on other website because it is in clear in the database.</p>
+    <p>N'utiliser pas un mot de passe que vous utilisez autre part car il est en clair dans la base de données.</p>
 </span>
 
 ## Languages et Tools
