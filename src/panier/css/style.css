@@ -1,0 +1,271 @@
+.container {
+    display: grid;
+    grid-template-columns: 60% 37%;
+    grid-template-rows: 100%;
+    grid-template-areas: "panier total";
+    grid-gap: 3%;
+    width: 100%;
+}
+
+.left-part {
+    grid-area: panier;
+    background-color: #D4E6FF;
+    margin: 30px;
+}
+
+.wrapper{
+    grid-area: total;
+    grid-template-columns: 100%;
+    grid-template-areas: "total paiement";
+    grid-gap: 2%;
+}
+
+.right-part-top {
+    grid-area: total;
+    background-color: #D4E6FF;
+    margin-right: 20px;
+    margin: 30px;
+}
+
+.right-part-bottom {
+    grid-area: paiement;
+    background-color: #D4E6FF;
+    margin-right: 20px;
+    margin: 30px;
+}
+
+h2 {
+    font-size: 27px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0;
+
+}
+
+.align-start-end {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+}
+
+.final-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+hr {
+    margin: 30px 20px;
+    height: 2px;
+    background-color: #64a2f8;
+    border: none;
+}
+
+.btn {
+    text-align: center;
+    cursor: pointer;
+}
+
+button {
+    background-color: #64a2f8;
+    color: white;
+    border: none;
+    padding: 3% 6%;
+    width: 90%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 3% 5% 5% 5%;
+}
+
+.payment {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: 100%;
+    grid-template-areas: "paypal visa mastercard";
+    grid-gap: 10px;
+    margin: 0 10px;
+}
+
+.paypal {
+    grid-area: paypal;
+    background-color: #D4E6FF;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.visa {
+    grid-area: visa;
+    background-color: #D4E6FF;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.mastercard {
+    grid-area: mastercard;
+    background-color: #D4E6FF;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+
+.container_panier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/*
+ * Enlever le dimensionnement de l'image
+ */
+.cd_infos_img img {
+    width: 200%;
+}
+
+.cd_infos_img {
+    width: 10%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cd_infos_text {
+    width: 40%;
+    padding: 10px;
+    margin: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cd-infos-info {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #5b5b5b;
+}
+
+.cd-infos-attr {
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-top: 10px;
+}
+
+.prix {
+    color:red;
+}
+
+.cd-quantity input {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5b5b5b;
+}
+
+.cd_supp_button i{
+    color: red;
+    font-size: 1.5em;
+    margin-top: 80px;
+    margin-right: 40px;
+}
+
+.button {
+    background-color: #64a2f8;
+    color: white;
+    border: none;
+    padding: 5px 13px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.btn-more {
+    margin: 3% 5% 5% 10%;
+}
+
+.btn-less {
+    margin: 3% 5% 5% 1%;
+}
+
+@media screen and (max-width: 700px) {
+    .payment {
+        grid-template-columns: repeat(2, 50px);
+        grid-template-rows: repeat(2, 50px);
+        grid-template-areas: "paypal visa" "mastercard mastercard";
+    }
+
+    .paypal {
+        grid-area: paypal;
+        background-color: #D4E6FF;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .visa {
+        grid-area: visa;
+        background-color: #D4E6FF;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .mastercard {
+        grid-area: mastercard;
+        background-color: #D4E6FF;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .right-part-top h3,
+    .final-price{
+        font-size: 16px;
+    }
+
+    .right-part-bottom h2 {
+        font-size: 24px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content;
+        grid-template-areas: "panier" "total";
+        grid-gap: 10px;
+        width: 100%;
+        margin : 0;
+    }
+
+    .container_panier {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 10px;
+    }
+
+    .cd_infos_text {
+        padding: 0;
+        margin-left: 30px;
+    }
+
+    .cd_supp_button i{
+        color: red;
+        font-size: 1.5em;
+        margin-left: 30px;
+        margin-top: 0;
+        padding: 0;
+    }
+}

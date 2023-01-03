@@ -1,0 +1,99 @@
+.credit-card {
+    background-color: #D4E6FF;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 5% 10% 0 10%;
+}
+
+.credit-card__body {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 40px 20% 10% 20%;
+    box-shadow: #a4a4a4 0px 0px 10px;
+}
+
+.credit-card__form__group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.credit-card__form__group__right{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-left: 10%;
+}
+
+.credit-card__form__group__left {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.credit-card__form__group label {
+    width: 20%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-right: 15px;
+}
+
+.credit-card__form__group input {
+    width: 80%;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.credit-card__footer__button{
+    background-color: #64a2f8;
+    border: 1px solid #64a2f8;
+    border-radius: 4px;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+
+.error-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .credit-card {
+        margin: 5% 5% 0 5%;
+    }
+    .credit-card__body {
+        margin: 40px 5% 10% 5%;
+    }
+
+    .bottom-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .credit-card__form__group__left {
+        width: 100%;
+    }
+
+    .credit-card__form__group__right {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .credit-card__form__group .expiration {
+        width: 40%;
+    }
+}

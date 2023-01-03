@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+body {
+    text-align: center;
+}
+
+img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 125px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 290px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: #D9E7EA;
+    color: #696969;
+    border:0px;
+    margin-bottom: 20px;
+}
+
+#password_confirm {
+    margin-bottom: 0px;
+}
+
+#connect_button {
+    width: 300px;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #00d1ff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 14px;
+    color: #5e5e5e;
+    margin-top: 25px;
+}
+
+a {
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#inscription {
+    font-weight: 600;
+}

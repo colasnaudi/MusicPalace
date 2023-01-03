@@ -1,0 +1,14 @@
+#failed_message {
+    color: red;
+    width: 290px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#login {
+    border: 1px solid red;
+}
+
+#password {
+    margin-bottom: 5px;
+}

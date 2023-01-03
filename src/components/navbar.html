@@ -1,0 +1,25 @@
+<div class="logo">
+    <a href="../home/home.php">
+        <img src="../img/ITunes_logo.svg.png">
+        <span class="logo-txt">MusicPalace</span>
+    </a>
+</div>
+
+<div class="rc_nav" id="centered_nav">
+    <a href="../artistes/artistes.php" title="Artistes">Artistes</a>
+    <a href="../styles/styles.php" title="Styles">Styles</a>
+    <a href="../panier/panier.php" title="Panier"><i class="fa fa-lg fa-shopping-cart"></i></a>
+    <a href="../parametres/parametres.php" title="Parametres"><i class="fa fa-lg fa-user"></i></a>
+    <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("centered_nav");
+        if (x.className === "rc_nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "rc_nav";
+        }
+    }
+</script>

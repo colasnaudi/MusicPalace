@@ -1,0 +1,20 @@
+.container {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.confirmation-btn {
+    margin-top: 50px;
+}
+.confirmation-btn a {
+    text-decoration: none;
+    color: #46a8b9;
+    border: solid 2px #46a8b9;
+    padding: 20px 15px;
+}
+
+.confirmation-btn a:hover {
+    background-color: #46a8b9;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}

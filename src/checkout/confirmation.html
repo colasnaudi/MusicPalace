@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/styleConfirmation.css">
+  <link rel="stylesheet" href="../components/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter-Medium">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+  <title>MusicPalace - Confirmation</title>
+</head>
+<body>
+<div class="logo">
+  <a href="../home/home.php">
+    <img src="../img/ITunes_logo.svg.png">
+    <span class="logo-txt">MusicPalace</span>
+  </a>
+</div>
+
+<div class="rc_nav" id="centered_nav">
+  <a href="../artistes/artistes.php" title="Artistes">Artistes</a>
+  <a href="../styles/styles.php" title="Styles">Styles</a>
+  <a href="../panier/panier.php" title="Panier"><i class="fa fa-lg fa-shopping-cart"></i></a>
+  <a href="../parametres/parametres.php" title="Parametres"><i class="fa fa-lg fa-user"></i></a>
+  <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="container">
+  <div class="confirmation-icon">
+    <img src="../img/verifier.png">
+  </div>
+  <div class="confirmation-txt">
+    <h2>Votre commande a bien été enregistrée !</h2>
+  </div>
+  <div class="confirmation-btn">
+      <a href="../home/home.php">Retour à l'accueil</a>
+  </div>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("centered_nav");
+    if (x.className === "rc_nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "rc_nav";
+    }
+  }
+</script>
+</body>
+</html>

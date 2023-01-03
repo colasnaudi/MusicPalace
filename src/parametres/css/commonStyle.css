@@ -1,0 +1,101 @@
+* {
+    margin:0;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100vh;
+    grid-template-areas: "sidebar main";
+}
+
+.side-navbar {
+    grid-area: sidebar;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+.row i {
+    margin-right: 20px;
+}
+
+.accueil {
+    margin: 40px 0 10px 0;
+}
+
+.back-button {
+    text-decoration: none;
+    color: black;
+}
+
+.compte,
+.gerer{
+    margin-left: 5px;
+    color: #484848;
+}
+
+.add-cd,
+.gerer-users,
+.gerer-cds,
+.add-users,
+.profil {
+    margin-left: 20px;
+    color: #484848;
+}
+
+.add-cd a,
+.profil a,
+.gerer-users a,
+.gerer-cds a,
+.add-users a {
+    text-decoration: none;
+    color: #484848;
+}
+
+.disconnect {
+    margin-left: 20px;
+}
+
+.disconnect a {
+    text-decoration: none;
+    color: red;
+}
+
+.content {
+    grid-area: main;
+    padding: 50px 40px;
+    border-left: solid 2px #eaeaea;
+}
+
+.header-text h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header-text p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #484848;
+}
+
+
+@media screen and (max-width: 830px) {
+    .container {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+}

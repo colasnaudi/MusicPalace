@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../components/css/style.css">
+    <!--CSS-HERE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter-Medium">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <title>MusicPalace - Checkout</title>
+</head>
+<body>
+<div class="logo">
+    <a href="../home/home.php">
+        <img src="../img/ITunes_logo.svg.png">
+        <span class="logo-txt">MusicPalace</span>
+    </a>
+</div>
+
+<div class="rc_nav" id="centered_nav">
+    <a href="../artistes/artistes.php" title="Artistes">Artistes</a>
+    <a href="../styles/styles.php" title="Styles">Styles</a>
+    <a href="../panier/panier.php" title="Panier"><i class="fa fa-lg fa-shopping-cart"></i></a>
+    <a href="../parametres/parametres.php" title="Parametres"><i class="fa fa-lg fa-user"></i></a>
+    <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("centered_nav");
+        if (x.className === "rc_nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "rc_nav";
+        }
+    }
+</script>
+<div class="checkout">
+    <div class="checkout__body">
+        <div class="checkout-form">
+            <div class="credit-card">
+                <div class="credit-card__header">
+                    <h2 class="credit-card__title">Checkout</h2>
+                </div>
+                <div class="credit-card__body">
+                    <form action="verification.php" method="post">
+                        <div class="credit-card__form">
+                            <div class="credit-card__form__group">
+                                <label for="card-number" class="credit-card__form__label">Numero de carte</label>
+                                <input type="text" name="card-number" id="card-number" class="credit-card__form__input" placeholder="1234 5678 9012 3456" required>
+                            </div>
+                            <div class="credit-card__form__group">
+                                <label for="card-holder" class="credit-card__form__label">Nom</label>
+                                <input type="text" name="card-holder" id="card-holder" class="credit-card__form__input" placeholder="John Doe" required>
+                            </div>
+                            <div class="credit-card__form__group bottom-group">
+                                <div class="credit-card__form__group__left">
+                                    <label for="expiration-date" class="credit-card__form__label expiration">Date d'expiration</label>
+                                    <input type="text" name="expiration-date" id="expiration-date" class="credit-card__form__input" placeholder="MM/YY" required>
+                                </div>
+                                <div class="credit-card__form__group__right">
+                                    <label for="cvv" class="credit-card__form__label">CVV</label>
+                                    <input type="text" name="cvv" id="cvv" class="credit-card__form__input" placeholder="123" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="credit-card__footer">
+                            <a href='verification.php'>
+                            <button type="submit" class="credit-card__footer__button">Payer 9.8 €</button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

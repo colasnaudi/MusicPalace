@@ -1,0 +1,11 @@
+#password {
+    border: 1px solid red;
+    margin-bottom: 5px;
+}
+
+#failed_message {
+    color: red;
+    width: 290px;
+    text-align: right;
+    margin-bottom: 10px;
+}

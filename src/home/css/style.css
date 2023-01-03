@@ -1,0 +1,63 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+@media screen and (max-width: 1224px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.item {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*
+ * Enlever le dimensionnement de l'image
+ */
+.cd-img {
+    width: 200px;
+}
+
+.artist-name {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 17px;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 45px;
+}

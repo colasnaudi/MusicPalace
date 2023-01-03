@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>MusicPalace - Inscription</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter-Medium">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html">
+      <img src="../img/ITunes_logo.svg.png" alt="logo">
+      <h1>MusicPalace</h1>
+    </a>
+      <h2>Inscription</h2>
+        <form action="inscription.php" method="post">
+            <div class="nom">
+                <h3>Nom</h3>
+                <input type="text" name="name" placeholder="Nom" id="nom" required>
+            </div>
+            <div class="prenom">
+                <h3>Prenom</h3>
+                <input type="text" name="surname" placeholder="Prenom" id="prenom" required>
+            </div>
+            <div class="login">
+                <h3>Adresse email</h3>
+                <input type="text" name="login" placeholder="Email" id="login" required>
+            </div>
+            <div class="password">
+                <h3>Mot de passe</h3>
+                <input type="password" name="password" placeholder="Mot de passe" id="password" required>
+            </div>
+            <div class="password_confirm">
+                <h3>Confirmer votre mot de passe</h3>
+                <input type="password" name="password_confirm" placeholder="Confirmez votre mot de passe" id="password_confirm" required>
+            </div>
+            <input id="connect_button" type="submit" value="Valider">
+        </form>
+  </div>
+</body>
+</html>
