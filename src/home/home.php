@@ -1,6 +1,7 @@
 <?php
     $html = file_get_contents('../components/navbar.html');
     include '../bd_connection/bd_connection.php';
+    include '../RedimensionnerImage/redimensionnerimage.php';
 
     $inputHTML = "<!DOCTYPE html>\n";
     $inputHTML .= "<html lang=\"fr\">\n";
@@ -32,7 +33,13 @@
         $id = $row->CD_ID;
         $inputHTML .= "        <a href=\"../cd_infos/cd_infos.php?id=$id\"><div class=\"item\">";
         $inputHTML .= "            <img class=\"cd-img\" id=\"$id\" src=\"$img\" >";
-        $inputHTML .= "<p class=\"artist-name\">$artist</p><p class=\"title\">$title</p></div></a>\n";
+
+        # On a essayé la fonction pour redimensionner, elle a marché mais pas
+        # si bien et maintenant elle ne marche plus dutout
+        # redimensionnerimage($img, "img/$id.jpg", 200, 200);
+        # $inputHTML .= "            <img class=\"cd-img\" id=\"$id\" src=\"img/$id.jpg\" >";
+
+        $inputHTML .= "        <p class=\"artist-name\">$artist</p><p class=\"title\">$title</p></div></a>\n";
     }
     $results->closeCursor();
     CloseCon($connexion);

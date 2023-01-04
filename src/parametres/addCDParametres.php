@@ -75,7 +75,7 @@ $inputHTML .= "                      <input type=\"text\" name=\"prix\" id=\"pri
 $inputHTML .= "                  </div>\n";
 $inputHTML .= "                  <div class=\"form-group\">\n";
 $inputHTML .= "                      <label for=\"image\">Image</label>\n";
-$inputHTML .= "                      <input type=\"text\" name=\"image\" id=\"image\" placeholder=\"Url ( .jpg ou .png )\" required>\n";
+$inputHTML .= "                      <input type=\"text\" name=\"image\" id=\"image\" placeholder=\"Url ( .jpg )\" required>\n";
 $inputHTML .= "                  </div>\n";
 $inputHTML .= "                  <div class=\"form-group\">\n";
 $inputHTML .= "                      <label for=\"ytb-link\">Youtube URL</label>\n";

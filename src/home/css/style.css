@@ -40,9 +40,6 @@
     text-align: center;
 }
 
-/*
- * Enlever le dimensionnement de l'image
- */
 .cd-img {
     width: 200px;
 }
